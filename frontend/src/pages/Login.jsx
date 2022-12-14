@@ -26,8 +26,11 @@ function Login() {
         }
 
         if(isSuccess || user){
+            console.log('im trying to go to dashboard')
             navigate('/')
         }
+
+        console.log('im here at login')
 
         dispatch(reset())
     }, [user, isError, isSuccess, message, navigate, dispatch])
